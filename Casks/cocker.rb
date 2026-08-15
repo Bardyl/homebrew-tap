@@ -5,14 +5,14 @@
 # cask publié en est une copie générée, qu'on ne modifie jamais à la main.
 cask "cocker" do
   version "0.4.0"
-  sha256 "a63cc82ba3e00911ff862eaaffedcddf37da11f7761513e02aa6bb99596a51a2"
+  sha256 "6f22d7002c4d49ad9d9b3c520651b6b92cef45f8a238ff1f1f828680ab939547"
 
   url "https://github.com/Bardyl/Cocker/releases/download/v#{version}/Cocker-#{version}.dmg"
   name "Cocker"
   desc "Menu bar Docker environment for macOS, without Docker Desktop"
   homepage "https://github.com/Bardyl/Cocker"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Cocker.app"
 
